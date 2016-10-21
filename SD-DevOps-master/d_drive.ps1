@@ -73,12 +73,6 @@ Invoke-VMScript -VM $VM -GuestCredential $GC -scripttext $script -ScriptType pow
 disconnect-viserver USHIFWP00043.tfayd.com -Force -WarningAction SilentlyContinue -confirm:$false
 
 
-#Invoke-Command -ComputerName $VM -FilePath E:\Script\Win_Lun.ps1 -credential $Credential
-#Invoke-Command -ComputerName $VM -FilePath E:\Script\cifs_share.ps1 -credential $Credential
-
-#Invoke-Command -ComputerName $VM -FilePath E:\Script\D_Drive.ps1 -D $Dsize -credential $Credential
-
-
 ###########################################################################
 ##Invoke-Command using Domain Credentials. 
 
