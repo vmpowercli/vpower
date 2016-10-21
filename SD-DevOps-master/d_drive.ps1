@@ -35,13 +35,6 @@ $username = "tfayd\~206428265"
 $Credential = New-Object -TypeName System.Management.Automation.PSCredential -argumentlist $username, $SecPassword
 
 
-#$UserName = Read-Host "Enter User Name:" 
-#$Password = Read-Host -AsSecureString "Enter Your Password:" 
-#$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $UserName , $Password 
-#$Service = Get-WmiObject -Class Win32_Service -ComputerName $ComputerName -Credential $Credential -Filter "Name='IISADMIN'" 
-#$Service
-
-
 $Dsize= 50
 
 foreach ($VM in $computername) { 
